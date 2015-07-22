@@ -1,5 +1,7 @@
 # Android
-This Repository contains snippets of little features I have worked on while I was learning and building Android apps. It is meant to provide the reader with insights I have gained and information about the possible points where newbies could make errors and end up doing hours of (possibly unproductive) research.
+This Repository contains snippets of little features I have worked on while I was learning and building Android apps. It is meant to provide the reader with insights I have gained and information about the possible points where newbies could make errors and end up doing hours of (possibly unproductive) research. 
+
+Also, some of the code in this repository has been borrowed, thanks to other repos and stackoverflow.
 
 ##Snippet Descriptions##
 
