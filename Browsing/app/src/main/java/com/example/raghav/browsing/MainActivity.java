@@ -26,13 +26,11 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //TextView tv_title = (TextView) findViewById(R.id.title);
-        //TextView tv_uri = (TextView) findViewById(R.id.uri);
+        
         LinearLayout mainLayout = (LinearLayout) findViewById(R.id.main_layout);
 
         String[] proj = new String[] { Browser.BookmarkColumns.TITLE, Browser.BookmarkColumns.URL };
-        String sel = Browser.BookmarkColumns.BOOKMARK + " = 0"; // 0 = history, 1 = bookmark
+        String sel = Browser.BookmarkColumns.BOOKMARK + " = 0"; //use 1 instead of 0 for bookmarks instead of history
         Cursor mCur = getContentResolver().query(Browser.BOOKMARKS_URI, proj, sel, null, null);
         mCur.moveToFirst();
 
@@ -47,6 +45,7 @@ public class MainActivity extends ActionBarActivity {
                 title = mCur.getString(mCur.getColumnIndex(Browser.BookmarkColumns.TITLE));
                 url = mCur.getString(mCur.getColumnIndex(Browser.BookmarkColumns.URL));
 
+                //Code for what you wish to do with the 2 pieces of data you have received.
                 TextView tvTitle = new TextView(this);
                 TextView tvUri = new TextView(this);
                 tvTitle.setText (title);
@@ -54,13 +53,10 @@ public class MainActivity extends ActionBarActivity {
 
                 mainLayout.addView (tvTitle);
                 mainLayout.addView (tvUri);
-                // Do something with title and url
+                
                 mCur.moveToNext();
             }
         }
-        //tv_title.setText (title);
-        //tv_uri.setText (url);
-
     }
 
 
