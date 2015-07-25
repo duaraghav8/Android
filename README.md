@@ -22,3 +22,7 @@ In android, there are 2 ways you can use the camera:
 2. Alternatively, you can integrate a camera into your own app like Facebook, Whatsapp, Snapchat and many others do.
 
 The focus here is on the second one. This one is restricted to landscape orientation, though with a little bit of exploring, you could play around with the camera feature all you like. For clicking the picture, tap on the screen. The camera then shows you the clicked image.
+
+**AutoCompleteTextView**
+
+Demonstrates the simple feature of bringing up suggestions when the user starts typing. A Text Box asks for your favourite phone. As you type its name, suggestions begin to appear in (by default) lexicographic order from a list of phones (this list can either be hardcoded (like in this app) or stored in a local database (SQLLite)).
