@@ -11,5 +11,7 @@
         android:layout_height="wrap_content"
         android:completionThreshold="3"
         android:hint="My Favourite Smartphone is..."/>
+        
+    <!--Completion Threshold property determines the minimum number of characters you need to type before the suggestions begin to appear-->
 
 </RelativeLayout>
