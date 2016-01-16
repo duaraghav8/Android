@@ -5,7 +5,7 @@ Also, some of the code in this repository has been borrowed, thanks to other rep
 
 ##Snippet Descriptions##
 
-**READ-SMS**
+**Messages**
 
 Does the simple task of importing a user's text messages into the app. This one specifically imports from the inbox only, but that can be extended to sent, outbox and so forth).
 
